@@ -58,13 +58,17 @@
   flex-direction: column;
 }
 
+.container__card-select {
+    height: 30rem;
+}
+
 .container__card-details {
   background-color: #fff;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 17rem;
   width: 100%;
 }
@@ -91,12 +95,22 @@
 }
 
 .container__card-box {
-  height: 20rem;
   width: 100%;
+  height: 18rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.container__card {
+    height: 15rem;
+    transition: transform 0.2s ease;
+}
+
+.container__card:hover {
+    transform: scale(1.1);
 }
 
 /* CARD VERSUS */
@@ -119,7 +133,7 @@
   height: 24rem;
   width: 16rem;
   border: 1px solid #fff;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 
 .card-versus__img {
@@ -129,6 +143,11 @@
 
 .card-versus__icon {
   height: 12rem;
+}
+
+.card-versus__button button {
+    height: 6rem;
+    font-size: 1.5rem;
 }
 
 #next-duel {
