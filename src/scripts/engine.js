@@ -155,7 +155,7 @@ async function drawCards(cardNumber, fieldSide) {
 }
 
 async function playAudio(status) {
-    const audio = new Audio(`../assets/audios/${status}.wav`);
+    const audio = new Audio(`src/assets/audios/${status}.wav`);
     audio.volume = 0.2;
     audio.play();
 }
