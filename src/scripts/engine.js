@@ -29,7 +29,7 @@ const cardData = [
     id: 0,
     name: "Blue Eyes White Dragon",
     type: "Paper",
-    img: `.${pathImages}dragon.png`,
+    img: `${pathImages}dragon.png`,
     WinOf: [1],
     LoseOf: [2],
   },
@@ -59,7 +59,7 @@ async function getRandomCardId() {
 async function createCardImage(cardId, fieldSide) {
   const cardImage = document.createElement("img");
   cardImage.classList.add("container__card");
-  cardImage.src = `../..${pathImages}card-back.png`;
+  cardImage.src = `${pathImages}card-back.png`;
   cardImage.alt = "Card Back";
   cardImage.setAttribute("data-card-id", cardId);
 
@@ -73,7 +73,7 @@ async function createCardImage(cardId, fieldSide) {
       cardImage.alt = `Card: ${cardData[cardId].name}`;
     });
     cardImage.addEventListener("mouseout", () => {
-      cardImage.src = `../..${pathImages}card-back.png`;
+      cardImage.src = `${pathImages}card-back.png`;
       cardImage.alt = "Card Back";
     });
   }
