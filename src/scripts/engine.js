@@ -165,6 +165,10 @@ async function playAudio(status) {
 function init() {
   drawCards(5, playerSides.player);
   drawCards(5, playerSides.computer);
+
+  const bgm = document.querySelector("#bgm");
+  bgm.volume = 0.3;
+  bgm.play();
 }
 
 init();
