@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="src/assets/favicon/Favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="src/styles/reset.css" />
+
+    <!-- framework -->
+    <link rel="stylesheet" href="src/styles/buttons.css" />
+    <link rel="stylesheet" href="src/styles/containers_and_frames.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- main style -->
+    <link rel="stylesheet" href="src/styles/main.css" />
+
+    <title>Yu-Gi-Oh Jo-Ken-Po Edition</title>
+  </head>
+  <body>
+    <div class="bg-video">
+      <video class="video" autoplay loop muted>
+        <source src="src/assets/video/yugi.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="container">
+      <section class="container__left framed-golden-2">
+        <div class="container__score-box frame">
+          <span id="player-score-points">Win : 0</span>
+          <span id="computer-score-points">Lose: 0</span>
+        </div>
+
+        <div id="menu-avatar">
+          <img src="" alt="" id="card-image" />
+        </div>
+
+        <div class="container__card-details frame">
+          <p class="container__card-name" id="card-name"></p>
+          <p class="container__card-type" id="card-type"></p>
+        </div>
+      </section>
+
+      <section class="container__right">
+        <div class="container__cards">
+          <div class="container__card-box framed" id="computer-cards"></div>
+
+          <div class="card-versus">
+            <div class="card-versus__chosen-cards">
+              <div class="card-versus__card-infield">
+                <img class="card-versus__img" id="player-field-card" />
+              </div>
+
+              <img
+                src="./src/assets/icons/millenium2.png"
+                alt="Olho de Horus"
+                class="card-versus__icon"
+              />
+
+              <div class="card-versus__card-infield">
+                <img class="card-versus__img" id="computer-field-card" />
+              </div>
+            </div>
+
+            <div class="card-versus__button">
+                <button class="rpgui-button" id="next-duel"></button>
+            </div>
+          </div>
+          <div class="container__card-box framed" id="player-cards"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./src/scripts/engine.js" defer></script>
+  </body>
+</html>
