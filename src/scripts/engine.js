@@ -22,7 +22,7 @@ const playerSides = {
   computer: "computer-cards",
 };
 
-const pathImages = "../../src/assets/icons/";
+const pathImages = "./src/assets/icons/";
 
 const cardData = [
   {
