@@ -152,12 +152,10 @@ async function drawCards(cardNumber, fieldSide) {
 
     document.querySelector(`#${fieldSide}`).appendChild(cardImage);
   }
-
-  console.log(cardNumber);
 }
 
 async function playAudio(status) {
-    const audio = new Audio(`../../src/assets/audios/${status}.wav`);
+    const audio = new Audio(`../assets/audios/${status}.wav`);
     audio.volume = 0.2;
     audio.play();
 }
